@@ -1,0 +1,37 @@
+name: Build ShieldUp APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ShieldUp
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - name: Install Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.13'
+
+      - name: Build Debug APK
+        run: gradle assembleDebug --no-daemon
+
+      - name: Upload ShieldUp APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShieldUp-debug-apk
+          path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
