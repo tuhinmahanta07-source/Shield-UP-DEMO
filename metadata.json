@@ -1,0 +1,6 @@
+{
+  "name": "ShieldUp",
+  "description": "A 3-stage personal safety companion prototype for college startup demonstration",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

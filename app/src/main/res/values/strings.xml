@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ShieldUp</string>
+    <string name="tagline">Your personal safety companion</string>
+    <string name="demo_mode">DEMO MODE</string>
+    <string name="stage_1_title">I DON\'T FEEL SAFE</string>
+    <string name="stage_1_desc">Start a discreet 15-min safety session.</string>
+    <string name="stage_2_title">MAY BE IN DANGER</string>
+    <string name="stage_2_desc">Notify contacts: Followed or harassed.</string>
+    <string name="stage_3_title">EMERGENCY</string>
+    <string name="stage_3_desc">Immediate SOS &amp; Law Enforcement.</string>
+    <string name="btn_activate_shield">Activate Shield</string>
+    <string name="btn_send_alert">Send Alert</string>
+    <string name="btn_test_trigger">TEST TRIGGER</string>
+    <string name="status_standby">System Standby</string>
+    <string name="status_shield_active">Shield Active</string>
+    <string name="status_alert_active">Danger Alert Active</string>
+    <string name="status_emergency">Emergency Active</string>
+</resources>
